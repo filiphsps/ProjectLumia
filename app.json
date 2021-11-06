@@ -1,0 +1,38 @@
+{
+    "expo": {
+        "name": "ProjectLumia",
+        "slug": "project-lumia",
+        "version": "1.0.0",
+        "orientation": "portrait",
+        "owner": "filiphsandstrom",
+        "icon": "./assets/icon.png",
+        "privacy": "unlisted",
+        "splash": {
+            "image": "./assets/splash.png",
+            "resizeMode": "contain",
+            "backgroundColor": "#477998"
+        },
+        "updates": {
+            "fallbackToCacheTimeout": 0
+        },
+        "assetBundlePatterns": ["**/*"],
+        "ios": {
+            "bundleIdentifier": "com.sandstromsandberg.hurvie",
+            "supportsTablet": false
+        },
+        "android": {
+            "package": "com.sandstromsandberg.hurvie",
+            "adaptiveIcon": {
+                "foregroundImage": "./assets/adaptive-icon.png",
+                "backgroundColor": "#477998"
+            }
+        },
+        "web": {
+            "favicon": "./assets/favicon.png"
+        },
+        "extra": {
+            "apiUrl": "https://hurvie.sandstromsandberg.com/",
+            "apiConnection": "Users"
+        }
+    }
+}

@@ -1,0 +1,75 @@
+{
+    "name": "@filiphsandstrom/project-lumia",
+    "description": "Windows 10 Mobile style launcher",
+    "main": "node_modules/expo/AppEntry.js",
+    "scripts": {
+        "start": "expo start",
+        "android": "expo start --android",
+        "ios": "expo start --ios",
+        "web": "expo start --web",
+        "build": "npm-run-all build:*",
+        "build:android": "expo build:android",
+        "test": "npm-run-all test:*",
+        "test:jest": "jest --passWithNoTests",
+        "lint": "npm-run-all lint:*",
+        "lint:prettier": "prettier --config .prettierrc **/*.tsx --check",
+        "format": "npm-run-all format:*",
+        "format:prettier": "prettier --config .prettierrc **/*.tsx --write"
+    },
+    "dependencies": {
+        "@types/styled-components-react-native": "5.1.2",
+        "axios": "0.24.0",
+        "expo": "42.0.4",
+        "expo-constants": "11.0.1",
+        "expo-haptics": "10.1.0",
+        "expo-localization": "10.2.0",
+        "expo-notifications": "0.12.3",
+        "i18n-js": "3.8.0",
+        "moment": "2.29.1",
+        "react": "16.13.1",
+        "react-dom": "16.13.1",
+        "react-native": "https://github.com/expo/react-native/archive/sdk-42.0.0.tar.gz",
+        "react-native-draggable-grid": "^2.1.4",
+        "react-native-easy-grid": "^0.2.2",
+        "react-native-super-grid": "^4.1.3",
+        "styled-components": "5.3.3",
+        "swr": "1.0.1"
+    },
+    "devDependencies": {
+        "@babel/core": "7.16.0",
+        "@expo/vector-icons": "12.0.5",
+        "@types/enzyme": "3.10.10",
+        "@types/i18n-js": "3.8.2",
+        "@types/jest": "27.0.2",
+        "@types/react": "16.14.20",
+        "@types/react-native": "0.66.2",
+        "babel-preset-expo": "8.5.1",
+        "enzyme": "3.11.0",
+        "husky": "4.3.8",
+        "jest": "27.3.1",
+        "jest-expo": "^43.0.1",
+        "jest-expo-enzyme": "1.2.4",
+        "npm-run-all": "4.1.5",
+        "prettier": "2.4.1",
+        "typescript": "4.4.4",
+        "yarnhook": "0.5.1"
+    },
+    "husky": {
+        "hooks": {
+            "post-checkout": "yarnhook",
+            "post-merge": "yarnhook",
+            "post-rewrite": "yarnhook",
+            "pre-commit": "npm run test && npm run lint"
+        }
+    },
+    "jest": {
+        "projects": [
+            {
+                "preset": "jest-expo/ios"
+            },
+            {
+                "preset": "jest-expo/android"
+            }
+        ]
+    }
+}
