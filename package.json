@@ -20,7 +20,7 @@
         "@types/styled-components-react-native": "5.1.2",
         "axios": "0.24.0",
         "expo": "42.0.4",
-        "expo-constants": "11.0.1",
+        "expo-constants": "11.0.2",
         "expo-haptics": "10.1.0",
         "expo-localization": "10.2.0",
         "expo-notifications": "0.12.3",
