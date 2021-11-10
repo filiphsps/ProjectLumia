@@ -42,7 +42,7 @@
         "@types/i18n-js": "3.8.2",
         "@types/jest": "27.0.2",
         "@types/react": "17.0.34",
-        "@types/react-native": "0.66.3",
+        "@types/react-native": "0.66.4",
         "babel-preset-expo": "8.5.1",
         "enzyme": "3.11.0",
         "husky": "4.3.8",
