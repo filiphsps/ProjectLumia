@@ -41,7 +41,7 @@
         "@types/enzyme": "3.10.12",
         "@types/i18n-js": "3.8.2",
         "@types/jest": "27.4.1",
-        "@types/react": "18.0.0",
+        "@types/react": "18.0.1",
         "@types/react-native": "0.67.3",
         "babel-preset-expo": "9.0.2",
         "enzyme": "3.11.0",
