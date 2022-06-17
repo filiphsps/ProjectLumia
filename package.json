@@ -23,7 +23,7 @@
         "expo-constants": "13.1.1",
         "expo-haptics": "11.2.0",
         "expo-localization": "13.0.0",
-        "expo-notifications": "0.15.2",
+        "expo-notifications": "0.15.3",
         "i18n-js": "3.9.2",
         "moment": "2.29.3",
         "react": "16.13.1",
